@@ -1,6 +1,5 @@
 package desafiosaldo.model
 
-import java.math.BigDecimal
 import java.util.UUID
 import javax.persistence.Column
 import javax.persistence.Entity
@@ -9,7 +8,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "accounts")
-data class Accounts(
+data class AccountEntity(
 
     @Id
     @Column(name = "id")
@@ -19,7 +18,7 @@ data class Accounts(
     val owner: UUID? = null,
 
     @Column(name = "created_at")
-    val createAt: String? = null,
+    val createdAt: String? = null,
 
     @Column(name = "status")
     val status: String? = null,

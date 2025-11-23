@@ -1,10 +1,10 @@
 package desafiosaldo.infra.repository
 
-import desafiosaldo.model.Accounts
+import desafiosaldo.model.AccountEntity
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 import java.util.UUID
 
 @Repository
-interface AccountsRepository: JpaRepository<Accounts, UUID> {
+interface AccountsRepository: JpaRepository<AccountEntity, UUID> {
 }

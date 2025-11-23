@@ -9,7 +9,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "transactions")
-data class Transactions(
+data class TransactionEntity(
 
     @Id
     @Column(name = "id")
